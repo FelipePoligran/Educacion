@@ -1,0 +1,20 @@
+//This code solves the following proposed problem: Design a program that takes as input an integer and shows at the output even if the number is
+even, and odd if it is odd. Don't use conditionals.
+
+public class evenodd {
+    public static void main(String[] args) {
+        java.util.Scanner //Enable Scanner for user input
+        scanner = new java.util.Scanner(System.in); //Defining the scanner object to store input value
+        System.out.print("Enter your whole number: ");
+        int number = scanner.nextInt(); //Reading the value entered by the user
+        
+        String[] result = {"even", "odd"}; //Definition of response according to data entered
+        System.out.print("your number: ");
+        System.out.print(number);
+        System.out.print(" is: ");
+        System.out.println(result[Math.abs(number % 2)]); //show results
+        
+        scanner.close(); //close scanner
+    }
+}
+
